@@ -72,6 +72,11 @@
 
 @media screen and ( max-width: 480px){
 
+.menu{
+  position: relative;
+  top: -78px;
+  left: 320px;
+}
 .menu ul {
   list-style: none;
   display: inline;
@@ -91,6 +96,9 @@
   display: list-item;
 }
 
+.info{
+  margin-left: 60px;
+}
 
 .imagenes .imgs{
   width: 100%;
