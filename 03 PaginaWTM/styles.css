@@ -1,0 +1,144 @@
+* {
+    margin:0 auto;
+    padding: 0 auto;
+    
+}
+.main-nav{
+    color: white;
+    height: 720px;
+    position: relative;
+    width: 100%;
+}
+
+.navigation{
+    background-color: rgba(0, 0, 0, 0.298039);
+    width: 100%;
+    position: fixed;    
+    text-transform: uppercase;
+    font-family: arial;
+}
+
+.navigation #logo {
+    
+    background-image: url('logo.png');
+    background-size: 50px;
+    background-repeat: 50px;
+    
+    margin: 10px 20px 30px 40px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    text-indent: 0;
+    color: transparent; 
+
+    float: left;
+}
+
+.main-links{
+    float: right;
+    margin-right: 100px;
+    font-size: 20px;
+    margin-top: 30px;
+
+}
+
+.main-links li {
+    display: inline;
+    margin: 0 10px;
+}
+
+.sub-nav {
+    float: left;
+    margin-top: 34px;
+}
+
+
+.sub-nav li{
+    display: inline;
+    margin-right: 5px;
+    list-style: none;
+}
+
+.fullscreen-bg {
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    z-index: -1000;
+    margin:0px;
+    padding:0px;
+}
+
+.fullscreen-bg__video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.titulo{
+    text-align: left;
+    position: relative;
+    top: 150%;
+    left: 7%;
+    
+    }
+.titulo h1{
+    display: inline-block;
+    text-align: inherit;
+    max-width: 500px;
+        
+}
+
+.titulo h2{
+    width: 290px;
+     
+}
+
+a{
+    text-decoration: none;
+    color: white;
+}
+.btton{
+    position:absolute;
+    left: 650px;
+    top: 84%;;
+    }
+button{
+    width: 113px;
+    height: 40px;
+    border-radius: 5px;
+    background: #FFF;
+    opacity: 0.7;
+    text-transform: uppercase;
+    font-weight: 800;
+    margin: 0 auto
+    }
+
+.botones{
+    list-style: none;
+    float: right;
+    margin-top: 25%;
+    
+    }
+    
+.botones li{    
+    border: solid 1px #FFF;
+    letter-spacing: 2px;
+    text-align: right;
+    width: 165px;
+    height: 30px;
+    line-height: 2;
+    margin-top: 5px;
+
+    }
+.section1{
+    display:flex;
+    margin-top: 350px;
+        }
+.articulos{
+    padding-left:50px;  
+    }                       
