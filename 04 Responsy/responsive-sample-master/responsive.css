@@ -1,0 +1,245 @@
+html{
+  font-size: 16px;
+}
+
+body{
+  margin: 0;
+}
+
+.container {
+  overflow: hidden;
+}
+
+.container header {
+  background: #B6B6B6;
+  color: white;
+  padding: 10px 0 0;
+  margin: 0;
+}
+
+.container header:before, .container header:after{
+  content: " ";
+  display: table;
+}
+
+.container header:after{
+  clear: both;
+}
+
+.container header > h1{
+  margin: 0;
+  padding-left: 0.5em;
+  float: left;
+  margin-bottom: 10px;
+}
+
+nav{
+  background: gray;
+  margin-top: 1.5em;
+  display: none;
+  position: absolute;
+  top: 1em;
+  width: 100%;
+  left: 0;
+}
+
+nav ul{
+  list-style: none;
+  margin: 0; 
+  padding: 0;
+}
+
+.hamburger-icon{
+  background: url('images/menu-icon.png') no-repeat;
+  width: 30px;
+  height: 30px;
+  background-size: 30px;
+  float: left;
+  margin-top: 3px;
+  margin-left: 11px; 
+}
+
+.hamburger-icon:hover nav{
+  display: block;
+}
+
+.navigation-desktop{
+  display: none;
+}
+
+nav ul li{
+  display: inline-block;
+  line-height: 50px;
+  width: 100%;
+}
+
+nav ul li a{
+  margin-right: 1px;
+  display: block;
+  background: #D6E2EE;
+  padding: 0 20px;
+  text-decoration: none;
+  color: #578EC8;
+  font-size: 15px;
+  text-transform: uppercase;
+  text-shadow: 1px 1px 1px #FFF;
+}
+
+nav ul li a:hover{
+  background: #F5F7F8;
+}
+
+.sidebar ul {
+  margin: 0;
+  padding: 0;
+}
+
+.sidebar ul li {
+  list-style: none;
+  margin-bottom: 1px;
+}
+
+.sidebar ul li a {
+  text-decoration: none;
+  line-height: 30px;
+  color: white;
+  background: #578EC8;
+  display: block;
+  padding: 10px;
+  font-size: 15px;
+  text-shadow: 1px 1px 1px #000;
+}
+.sidebar ul li a:hover {
+  background: gray;
+}
+
+.extra-content{
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  box-shadow: 1px 1px 1px #e2e2e2;
+  background: #e2e2e2;
+  padding: 20px;
+  overflow: hidden;
+}
+
+.extra-content-box{
+  background: white;
+  padding: 5%;
+  line-height: 30px;
+  text-align: justify;
+}
+
+footer{
+  background: #578EC8;
+  min-height: 70px;
+  color: white;
+  text-align: center;
+  line-height: 70px;
+}
+
+.separator{
+  text-align: center;
+  line-height: 50px;
+  background: #3F6E96;
+  color: white;
+  text-transform: uppercase;
+  box-shadow: inset 0px 0px 3px 2px #0B3E68;
+  text-shadow: 1px 1px 1px #000;
+}
+
+.crazy-boxes{
+  overflow: hidden;
+}
+
+.crazy-box{
+  background: rgba(0, 80, 255, 0.26);
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 1px 2px 3px 0px #626262;
+  margin-bottom: 20px;
+}
+
+.crazy-box p{
+  line-height: 24px;
+  text-align: justify;
+}
+
+.feature img{
+  width: 100%;
+}
+
+.text-layout p{
+  width: 70px;
+  background: #ccc;
+  color: gray;
+  
+}
+
+.text-layout .clipped{
+  overflow: hidden;
+  text-overflow: clip;
+}
+
+.text-layout .elipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.content p{
+  font-size: 25px;
+}
+
+@media screen and (orientation: landscape){
+  .hamburger-icon{
+    display: none;
+  }
+.sidebar{
+  width: 15%;
+  float: left;
+}
+.boxes{
+  overflow: hidden;
+  clear: both;
+  }
+
+.boxes.feature{
+  float: left;
+  width: 25%
+  }
+.extra-content{
+  clear: both;
+  overflow: hidden;
+  }
+
+.extra-content-box{
+  float: left;
+  width: 25%;
+      }
+
+.crazy-box.box1{
+  width: 40%;
+  margin: auto;
+     } 
+.crazy-box.box2{
+  width: 45%;
+  float: left;
+}
+
+.crazy-box.box3{
+  width: 45%;
+  float:right;
+}
+
+
+}
+
+/* Tablets */
+@media screen and (min-width: 768px){
+  
+}
+
+/* Desktop */
+@media screen and (min-width: 992px) {
+
+
+}
