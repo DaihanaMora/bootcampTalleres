@@ -35,14 +35,13 @@ puts "escriba su mes"
  mes= gets.chomp
   mes =mes.to_i 
 
-if   mes == 1 && dia<= 21
  # puts "ud es capricornio"
 
 	unless   mes == 3 && dia<= 30
 	 puts "ud es  no  espiscis"
 		
 
-	 end  
+	 
 end
 
 
