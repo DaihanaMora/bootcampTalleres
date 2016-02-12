@@ -190,36 +190,40 @@ footer{
 }
 
 @media screen and (orientation: landscape){
-  .hamburger-icon{
-    display: none;
-  }
+.hamburger-icon{
+  display: none;
+}
+
 .sidebar{
   width: 15%;
   float: left;
 }
+
 .boxes{
   overflow: hidden;
   clear: both;
-  }
+}
 
 .boxes.feature{
   float: left;
   width: 25%
-  }
+}
+
 .extra-content{
   clear: both;
   overflow: hidden;
-  }
+}
 
 .extra-content-box{
   float: left;
   width: 25%;
-      }
+}
 
 .crazy-box.box1{
   width: 40%;
   margin: auto;
-     } 
+}
+ 
 .crazy-box.box2{
   width: 45%;
   float: left;
