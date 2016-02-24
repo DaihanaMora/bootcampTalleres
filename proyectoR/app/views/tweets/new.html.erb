@@ -1,0 +1,13 @@
+<h1>crear Tweets</h1>
+
+<%= form_for @tweet do |f| %>
+  <p>
+    <%= f.label :message %><br>
+    <%= f.text_field :message %>
+  </p>
+ 
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>
