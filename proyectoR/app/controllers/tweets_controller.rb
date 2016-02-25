@@ -2,6 +2,8 @@ class TweetsController < ApplicationController
 	
 	def index#desplega informacion
 		@tweets = Tweet.all
+
+		@tweets_b_a = User.find(1).tweets
 	end
 
 	def new
@@ -10,6 +12,10 @@ class TweetsController < ApplicationController
 	end
 
 	def edit
+        @tweet = Tweet.find(params[:id])
+    end
+
+    def show
         @tweet = Tweet.find(params[:id])
     end
 

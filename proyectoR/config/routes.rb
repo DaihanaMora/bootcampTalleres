@@ -7,6 +7,9 @@ Rails.application.routes.draw do
 
    resources :tweets
 
+   resources :users
+   
+
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
