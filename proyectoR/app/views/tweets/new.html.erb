@@ -7,7 +7,7 @@
     <%= f.label :message %><br>
     <%= f.text_field :message %>
   </p>
- 
+ <%= f.select :user_id,User.all.collect{|u| [u.nombre, u.id]}%>
  
   <p>
     <%= f.submit %>

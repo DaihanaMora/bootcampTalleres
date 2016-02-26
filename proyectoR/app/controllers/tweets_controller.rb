@@ -26,6 +26,14 @@ class TweetsController < ApplicationController
 
     end
 
+    def destroy
+    	@tweet = Tweet.find(params[:id])
+    	@tweet.destroy
+    	redirect_to tweets_path
+
+    	
+    end
+
 	def create
 		@tweet = Tweet.new(tweet_params)
 		@tweet.save#para guardar
@@ -34,7 +42,7 @@ class TweetsController < ApplicationController
 
 #que parametros vaa leer recibir rl controlador	 en este caso solo mensajes
 	def tweet_params
-		params.require(:tweet).permit(:message)
+		params.require(:tweet).permit(:id, :message, :user_id)
 		#permit es para restringir
 	end
 
