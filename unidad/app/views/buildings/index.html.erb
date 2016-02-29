@@ -1,0 +1,12 @@
+<h1> hola soy la unidad residencial</h1>
+<h2> torre de la Unidad</h2>
+
+<ul>
+	<% @buildings.each do |building| %>
+
+	<li>Nombre del edificio: <%= building.nombre %></li>
+	
+	<%= link_to "ver torre", building%>
+
+	<% end %>
+</ul>
