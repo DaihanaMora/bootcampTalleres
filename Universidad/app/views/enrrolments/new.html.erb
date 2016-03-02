@@ -1,0 +1,25 @@
+<h1>Create enrrolment</h1>
+
+<%=link_to "ver todos enrrolment", enrrolments_path%>
+
+<%= form_for @enrrolment do |f| %>
+  
+<p>
+
+    <br>
+    <%= f.label :student_id %><br>
+    <br>
+    <%= f.select :student_id, Student.all.collect{|u| [u.nombre, u.id]}%> <br> 
+    <br>
+    <%= f.label :subject_id %><br>
+    <br>
+    <%= f.select :subject_id, Subject.all.collect{|b| [b.nombre, b.id]}%> <br>
+    <br>
+    <%= f.select :subject_id, Subject.all.collect{|b| [b.codigo, b.id]}%> <br>
+   
+ 
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

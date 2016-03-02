@@ -1,0 +1,20 @@
+<h1> Answer List </h1>
+
+<ol>
+<%= link_to "Create New Answers", new_answer_path %>
+<br>
+<% @answers.each do |answer| %>
+<br>
+<ul> contenido: <%= answer.contenido %>   </ul>
+   
+<ul> calificacion:  <%= answer.calificacion %>  </ul>
+
+<br>
+ 
+<%= link_to "Edit", edit_answer_path(answer)%>
+
+<%= link_to "Delete", answer_path(answer), method: :delete, data: {confirm: "Sure"} %>
+<br>
+<%end%>
+
+</ol>

@@ -1,0 +1,22 @@
+<h1> enrrolments List </h1>
+
+<ol>
+<%= link_to "Create New enrrolment", new_enrrolment_path %>
+<br>
+<% @enrrolments.each do |enrrolment| %>
+<br>
+
+<ul> Estudiante: <%= Student.find(enrrolment.student_id).nombre %>   <%= Student.find(enrrolment.student_id).apellido %> </ul>
+
+<ul> Esta matriculado en la Materia: <%= Subject.find(enrrolment.subject_id).nombre %></ul>
+
+<ul> Codigo: <%= Subject.find(enrrolment.subject_id).codigo %></ul>
+<br>
+
+<%= link_to "Edit", edit_enrrolment_path(enrrolment)%>
+
+<%= link_to "Delete", enrrolment_path(enrrolment), method: :delete, data: {confirm: "Sure"} %>
+<br>
+<%end%>
+
+</ol>

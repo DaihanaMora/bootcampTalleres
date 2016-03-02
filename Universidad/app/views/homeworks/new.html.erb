@@ -1,0 +1,21 @@
+<h1>Create homework</h1>
+
+<%=link_to "ver todos subject", homeworks_path%>
+
+<%= form_for @homework do |f| %>
+  
+<p>
+   <%= f.label :enunciado %><br>
+     <%= f.text_field :enunciado %><br>
+     <%= f.label :fecha %><br>
+     <%= f.text_field :fecha %><br>
+     <%= f.label :subject_id %><br>
+     <%= f.text_field :subject_id %><br>
+ </p>
+
+ 
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

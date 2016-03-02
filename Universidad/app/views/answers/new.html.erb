@@ -1,0 +1,30 @@
+<h1>Create answer</h1>
+
+<%=link_to "ver todos answers", answers_path%>
+
+<%= form_for @answer do |f| %>
+  
+<p>
+
+     <%= f.label :contenido %><br>
+     <br>
+     <%= f.text_field :contenido %><br>
+     <br>
+     <%= f.label :calificacion %><br>
+     <br>
+     <%= f.text_field :calificacion %><br>
+     <br>
+      <%= f.label :student_id %><br>
+     <br>
+     <%= f.select :student_id, Student.all.collect{|u| [u.nombre, u.id]}%> <br> 
+     <br>
+      <%= f.label :homework_id %><br>
+     <br>
+     <%= f.select :homework_id, Homework.all.collect{|b| [b.enunciado, b.id]}%> <br>
+     <br>
+ 
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

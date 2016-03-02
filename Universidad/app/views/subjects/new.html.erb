@@ -1,0 +1,21 @@
+<h1>Create subject</h1>
+
+<%=link_to "ver todos subject", subjects_path%>
+
+<%= form_for @subject do |f| %>
+  
+<p>
+   <%= f.label :nombre %><br>
+     <%= f.text_field :nombre %><br>
+     <%= f.label :codigo %><br>
+     <%= f.text_field :codigo %><br>
+     <%= f.label :teacher_id %><br>
+     <%= f.text_field :teacher_id %><br>
+ </p>
+
+ 
+ 
+  <p>
+    <%= f.submit %>
+  </p>
+<% end %>

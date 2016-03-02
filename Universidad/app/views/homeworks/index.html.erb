@@ -1,0 +1,20 @@
+<h1> Homeworks List </h1>
+
+<ol>
+<%= link_to "Create New Homeworks", new_homework_path %>
+<br>
+<% @homeworks.each do |homework| %>
+<br>
+<ul> enunciado: <%= homework.enunciado %>   </ul>
+   
+<ul> fecha:  <%= homework.fecha %> subject: </ul>
+
+<br>
+ 
+<%= link_to "Edit", edit_homework_path(homework)%>
+
+<%= link_to "Delete", homework_path(homework), method: :delete, data: {confirm: "Sure"} %>
+<br>
+<%end%>
+
+</ol>
