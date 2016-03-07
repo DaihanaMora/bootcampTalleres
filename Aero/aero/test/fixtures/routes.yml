@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ciudad_origen: MyString
+  ciudad_destino: MyString
+  valor: 1.5
+  hora_salida: 2016-03-07 15:08:05
+  hora_llegada: 2016-03-07 15:08:05
+
+two:
+  ciudad_origen: MyString
+  ciudad_destino: MyString
+  valor: 1.5
+  hora_salida: 2016-03-07 15:08:05
+  hora_llegada: 2016-03-07 15:08:05

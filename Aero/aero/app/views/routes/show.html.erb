@@ -1,0 +1,29 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ciudad origen:</strong>
+  <%= @route.ciudad_origen %>
+</p>
+
+<p>
+  <strong>Ciudad destino:</strong>
+  <%= @route.ciudad_destino %>
+</p>
+
+<p>
+  <strong>Valor:</strong>
+  <%= @route.valor %>
+</p>
+
+<p>
+  <strong>Hora salida:</strong>
+  <%= @route.hora_salida %>
+</p>
+
+<p>
+  <strong>Hora llegada:</strong>
+  <%= @route.hora_llegada %>
+</p>
+
+<%= link_to 'Edit', edit_route_path(@route) %> |
+<%= link_to 'Back', routes_path %>
