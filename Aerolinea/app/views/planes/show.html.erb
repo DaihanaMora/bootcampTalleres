@@ -1,0 +1,19 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Nombre:</strong>
+  <%= @plane.nombre %>
+</p>
+
+<p>
+  <strong>Placa:</strong>
+  <%= @plane.placa %>
+</p>
+
+<p>
+  <strong>Cupo:</strong>
+  <%= @plane.cupo %>
+</p>
+
+<%= link_to 'Edit', edit_plane_path(@plane) %> |
+<%= link_to 'Back', planes_path %>

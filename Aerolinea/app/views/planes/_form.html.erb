@@ -1,0 +1,29 @@
+<%= form_for(@plane) do |f| %>
+  <% if @plane.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@plane.errors.count, "error") %> prohibited this plane from being saved:</h2>
+
+      <ul>
+      <% @plane.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :nombre %><br>
+    <%= f.text_field :nombre %>
+  </div>
+  <div class="field">
+    <%= f.label :placa %><br>
+    <%= f.text_field :placa %>
+  </div>
+  <div class="field">
+    <%= f.label :cupo %><br>
+    <%= f.text_field :cupo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

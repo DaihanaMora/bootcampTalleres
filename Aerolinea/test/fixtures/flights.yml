@@ -1,0 +1,13 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  ruta_id: MyString
+  avion_id: MyString
+  piloto_id: MyString
+  numero_vuelo: MyString
+
+two:
+  ruta_id: MyString
+  avion_id: MyString
+  piloto_id: MyString
+  numero_vuelo: MyString

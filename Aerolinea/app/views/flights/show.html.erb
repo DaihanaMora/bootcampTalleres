@@ -1,0 +1,24 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Ruta:</strong>
+  <%= @flight.ruta_id %>
+</p>
+
+<p>
+  <strong>Avion:</strong>
+  <%= @flight.avion_id %>
+</p>
+
+<p>
+  <strong>Piloto:</strong>
+  <%= @flight.piloto_id %>
+</p>
+
+<p>
+  <strong>Numero vuelo:</strong>
+  <%= @flight.numero_vuelo %>
+</p>
+
+<%= link_to 'Edit', edit_flight_path(@flight) %> |
+<%= link_to 'Back', flights_path %>
