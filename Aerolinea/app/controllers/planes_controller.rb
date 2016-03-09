@@ -5,6 +5,7 @@ class PlanesController < ApplicationController
   # GET /planes.json
   def index
     @planes = Plane.all
+    @plane = Plane.order(cupo: :desc)
   end
 
   # GET /planes/1
