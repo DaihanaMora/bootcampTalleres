@@ -1,0 +1,24 @@
+<h1>FORMULARIO</h1>
+
+<%= form_tag({controller: "users" , action: "contact"}, method:"put")  do %>
+
+	<%= label_tag(:name, "Name") %>
+	<br>
+	<br>
+    <%= text_field_tag :name, "su nombre es" %>
+    <br>
+    <br>
+	<%= label_tag(:last,  "Last Name") %>
+	<br>
+	<br>
+	<%= text_field_tag :last, "su apellido es" %>
+	<br>
+	<br>
+	<%= label_tag(:email,  "Email") %>
+	<br>
+	<br>
+	<%= text_field_tag :email, "digite su email"%>
+	<br>
+
+
+<%end%>
