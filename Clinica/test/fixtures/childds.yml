@@ -1,0 +1,45 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  surname: MyString
+  lastname: MyString
+  secondlastname: MyString
+  ti: 1
+  age: MyString
+  sex: MyString
+  name_mother: MyString
+  name_father: MyString
+  vacuna1: MyString
+  vacuna2: MyString
+  vacuna3: MyString
+  vacuna4: MyString
+  cancer: MyString
+  hipertencion: MyString
+  diabetes: MyString
+  otra: MyString
+  enfermedades: MyString
+  desnutricion: MyString
+  grupo_sanguineo: MyString
+
+two:
+  name: MyString
+  surname: MyString
+  lastname: MyString
+  secondlastname: MyString
+  ti: 1
+  age: MyString
+  sex: MyString
+  name_mother: MyString
+  name_father: MyString
+  vacuna1: MyString
+  vacuna2: MyString
+  vacuna3: MyString
+  vacuna4: MyString
+  cancer: MyString
+  hipertencion: MyString
+  diabetes: MyString
+  otra: MyString
+  enfermedades: MyString
+  desnutricion: MyString
+  grupo_sanguineo: MyString

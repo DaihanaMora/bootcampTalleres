@@ -1,0 +1,97 @@
+<%= form_for(@childd) do |f| %>
+  <% if @childd.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@childd.errors.count, "error") %> prohibited this childd from being saved:</h2>
+
+      <ul>
+      <% @childd.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :name %><br>
+    <%= f.text_field :name %>
+  </div>
+  <div class="field">
+    <%= f.label :surname %><br>
+    <%= f.text_field :surname %>
+  </div>
+  <div class="field">
+    <%= f.label :lastname %><br>
+    <%= f.text_field :lastname %>
+  </div>
+  <div class="field">
+    <%= f.label :secondlastname %><br>
+    <%= f.text_field :secondlastname %>
+  </div>
+  <div class="field">
+    <%= f.label :ti %><br>
+    <%= f.number_field :ti %>
+  </div>
+  <div class="field">
+    <%= f.label :age %><br>
+    <%= f.text_field :age %>
+  </div>
+  <div class="field">
+    <%= f.label :sex %><br>
+    <%= f.text_field :sex %>
+  </div>
+  <div class="field">
+    <%= f.label :name_mother %><br>
+    <%= f.text_field :name_mother %>
+  </div>
+  <div class="field">
+    <%= f.label :name_father %><br>
+    <%= f.text_field :name_father %>
+  </div>
+  <div class="field">
+    <%= f.label :vacuna1 %><br>
+    <%= f.text_field :vacuna1 %>
+  </div>
+  <div class="field">
+    <%= f.label :vacuna2 %><br>
+    <%= f.text_field :vacuna2 %>
+  </div>
+  <div class="field">
+    <%= f.label :vacuna3 %><br>
+    <%= f.text_field :vacuna3 %>
+  </div>
+  <div class="field">
+    <%= f.label :vacuna4 %><br>
+    <%= f.text_field :vacuna4 %>
+  </div>
+  <div class="field">
+    <%= f.label :cancer %><br>
+    <%= f.text_field :cancer %>
+  </div>
+  <div class="field">
+    <%= f.label :hipertencion %><br>
+    <%= f.text_field :hipertencion %>
+  </div>
+  <div class="field">
+    <%= f.label :diabetes %><br>
+    <%= f.text_field :diabetes %>
+  </div>
+  <div class="field">
+    <%= f.label :otra %><br>
+    <%= f.text_field :otra %>
+  </div>
+  <div class="field">
+    <%= f.label :enfermedades %><br>
+    <%= f.text_field :enfermedades %>
+  </div>
+  <div class="field">
+    <%= f.label :desnutricion %><br>
+    <%= f.text_field :desnutricion %>
+  </div>
+  <div class="field">
+    <%= f.label :grupo_sanguineo %><br>
+    <%= f.text_field :grupo_sanguineo %>
+  </div>
+  <div class="actions">
+    <%= f.submit %>
+  </div>
+<% end %>

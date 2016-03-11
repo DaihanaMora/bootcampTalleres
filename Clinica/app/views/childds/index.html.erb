@@ -1,0 +1,65 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Listing Childds</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Name</th>
+      <th>Surname</th>
+      <th>Lastname</th>
+      <th>Secondlastname</th>
+      <th>Ti</th>
+      <th>Age</th>
+      <th>Sex</th>
+      <th>Name mother</th>
+      <th>Name father</th>
+      <th>Vacuna1</th>
+      <th>Vacuna2</th>
+      <th>Vacuna3</th>
+      <th>Vacuna4</th>
+      <th>Cancer</th>
+      <th>Hipertencion</th>
+      <th>Diabetes</th>
+      <th>Otra</th>
+      <th>Enfermedades</th>
+      <th>Desnutricion</th>
+      <th>Grupo sanguineo</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @childds.each do |childd| %>
+      <tr>
+        <td><%= childd.name %></td>
+        <td><%= childd.surname %></td>
+        <td><%= childd.lastname %></td>
+        <td><%= childd.secondlastname %></td>
+        <td><%= childd.ti %></td>
+        <td><%= childd.age %></td>
+        <td><%= childd.sex %></td>
+        <td><%= childd.name_mother %></td>
+        <td><%= childd.name_father %></td>
+        <td><%= childd.vacuna1 %></td>
+        <td><%= childd.vacuna2 %></td>
+        <td><%= childd.vacuna3 %></td>
+        <td><%= childd.vacuna4 %></td>
+        <td><%= childd.cancer %></td>
+        <td><%= childd.hipertencion %></td>
+        <td><%= childd.diabetes %></td>
+        <td><%= childd.otra %></td>
+        <td><%= childd.enfermedades %></td>
+        <td><%= childd.desnutricion %></td>
+        <td><%= childd.grupo_sanguineo %></td>
+        <td><%= link_to 'Show', childd %></td>
+        <td><%= link_to 'Edit', edit_childd_path(childd) %></td>
+        <td><%= link_to 'Destroy', childd, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Childd', new_childd_path %>

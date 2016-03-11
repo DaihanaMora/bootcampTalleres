@@ -1,0 +1,47 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  name: MyString
+  surname: MyString
+  lastname: MyString
+  secondlastname: MyString
+  documento_id: 1
+  fecha_de_nacimiento: MyString
+  estado_civil: MyString
+  numero_de_hijos: MyString
+  numero_de_abortos: MyString
+  problemas_de_embarazo: MyString
+  cancer_de_ovarios: MyString
+  cancer_de_mamas: MyString
+  algun_otro_cancer: MyString
+  hipertencion: MyString
+  diabetes: MyString
+  alzheimer: MyString
+  grupo_sanguineo: MyString
+  otra: MyString
+  enfermedades: MyString
+  grupo_sanguineo: MyString
+  enfermedades_o_tratamientos_actitudes: MyString
+
+two:
+  name: MyString
+  surname: MyString
+  lastname: MyString
+  secondlastname: MyString
+  documento_id: 1
+  fecha_de_nacimiento: MyString
+  estado_civil: MyString
+  numero_de_hijos: MyString
+  numero_de_abortos: MyString
+  problemas_de_embarazo: MyString
+  cancer_de_ovarios: MyString
+  cancer_de_mamas: MyString
+  algun_otro_cancer: MyString
+  hipertencion: MyString
+  diabetes: MyString
+  alzheimer: MyString
+  grupo_sanguineo: MyString
+  otra: MyString
+  enfermedades: MyString
+  grupo_sanguineo: MyString
+  enfermedades_o_tratamientos_actitudes: MyString

@@ -1,0 +1,1 @@
+json.extract! @childd, :id, :name, :surname, :lastname, :secondlastname, :ti, :age, :sex, :name_mother, :name_father, :vacuna1, :vacuna2, :vacuna3, :vacuna4, :cancer, :hipertencion, :diabetes, :otra, :enfermedades, :desnutricion, :grupo_sanguineo, :created_at, :updated_at
