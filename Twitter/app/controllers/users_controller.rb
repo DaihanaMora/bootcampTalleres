@@ -18,6 +18,11 @@ class UsersController < ApplicationController
   def edit
   end
 
+  def destroy
+    
+    
+  end
+
   def tweet_params
       params.require(:user).permit(:name, :lastname, :email, :pais, :username, :avatar)
     end 

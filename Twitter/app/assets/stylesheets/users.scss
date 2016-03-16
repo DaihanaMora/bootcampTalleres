@@ -1,3 +1,51 @@
 // Place all the styles related to the Users controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+//sas variables 
+$color-predeterminado: green;
+@import 'tweets';
+//mixin es como una funcion y puede recibir paramaetros ejm @mixin borde(borde-size){border: 3px solid #000;}
+// @include borde(3px);
+@mixin borde{
+	border: 3px solid #000;
+}
+
+html{
+	background:asset-url("fondo.jpg");
+	color: $color-predeterminado;	
+}
+//nesting selectores anidados
+table{
+	
+	thead{
+		background: #D7E2E2;
+		color: $color-predeterminado;
+		font-family: $fuente;
+		font-size: $tamano;
+		@include borde;
+	}
+	th{
+		color: $color-predeterminado;
+		font-family: $fuente;
+		font-size: $tamano;
+		@include borde;
+
+	}
+
+	td{
+		background: #EEFAFF;
+		color: $color;
+		font-family: $fuente;
+		font-size: $tamano;
+		@include borde;
+		//@extend .th; esto es para reutilizar codigo
+
+	}
+
+	tbody{
+		background: green ;
+		@include borde;
+
+	}
+}
+
