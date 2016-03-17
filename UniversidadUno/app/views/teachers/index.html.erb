@@ -1,0 +1,12 @@
+<h1>lista de Teachers</h1>
+
+<%= link_to "agregar Teacher", new_teacher_path %>
+<ol>
+	<% @teachers.each do |teacher| %>
+	Profesor:<li><%= teacher.nombre %></li> apellido: <%= teacher.apellido %>  cc<%= teacher.identificacion %> Email:<%= teacher.email %>
+	<br>
+<%= link_to "editar", edit_teacher_path(teacher)%>
+<%= link_to "eliminar",teacher_path(teacher), method: :delete, data: {
+	confirm: "estas seguro" }%>
+	<% end %>
+</ol>

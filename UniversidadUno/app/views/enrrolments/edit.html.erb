@@ -1,0 +1,27 @@
+<h1>Edit enrrolments</h1>
+
+
+
+<%= form_for @enrrolment do |f| %>
+   
+ <p>
+    
+      <br>
+      <%= f.label :student_id %><br>
+     <br>
+     <%= f.select :student_id, Student.all.collect{|u| [u.nombre, u.id]}%> <br> 
+     <br>
+      <%= f.label :subject_id %><br>
+     <br>
+     <%= f.select :subject_id, Subject.all.collect{|b| [b.nombre, b.id]}%> <br>
+     <br>
+     <%= f.select :subject_id, Subject.all.collect{|b| [b.codigo, b.id]}%> <br>
+   
+ </p>
+
+
+ <p>
+   <%= f.submit %>
+ </p>
+
+<% end %>

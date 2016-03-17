@@ -1,0 +1,19 @@
+<h1>Edit subject/h1>
+<p>
+
+
+<%= form_for @subject do |f| %>
+ <p>
+     <%= f.label :nombre %><br>
+     <%= f.text_field :nombre %><br>
+     <%= f.label :codigo %><br>
+     <%= f.text_field :codigo %><br>
+    
+    <%= f.select :teacher_id,Teacher.all.collect{|u| [u.nombre, u.id]}%> <br>
+ </p>
+
+
+ <p>
+   <%= f.submit %>
+ </p>
+<% end %>

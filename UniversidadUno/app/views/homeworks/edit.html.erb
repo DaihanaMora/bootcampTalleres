@@ -1,0 +1,20 @@
+<h1>Edit homework</h1>
+<p>
+
+
+<%= form_for @homework do |f| %>
+ <p>
+     <%= f.label :enunciado %><br>
+     <%= f.text_field :enunciado %><br>
+     <%= f.label :fecha %><br>
+     <%= f.text_field :fecha %><br>
+   
+    
+    <%= f.select :subject_id, Subject.all.collect{|u| [u.nombre, u.id]}%> <br>
+ </p>
+
+
+ <p>
+   <%= f.submit %>
+ </p>
+<% end %>

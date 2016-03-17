@@ -1,0 +1,20 @@
+<h1> Subjects List </h1><ol>
+
+
+<%= link_to "Create New Subject", new_subject_path %>
+<br>
+<% @subjects.each do |subject| %>
+<br>
+<ul> Nombre: <%= subject.nombre %>   </ul>
+   
+<ul> Codigo:  <%= subject.codigo %> Teacher: </ul>
+
+<br>
+ 
+<%= link_to "Edit", edit_subject_path(subject)%>
+
+<%= link_to "Delete", subject_path(subject), method: :delete, data: {confirm: "Sure"} %>
+<br>
+<%end%>
+
+</ol>

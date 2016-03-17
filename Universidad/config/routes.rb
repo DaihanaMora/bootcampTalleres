@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
+  devise_for :students
+  
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 resources :teachers
 resources :subjects
-resources :students
 resources :homeworks
 resources :enrrolments
 resources :answers
