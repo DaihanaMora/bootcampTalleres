@@ -16,8 +16,9 @@ end
 		f.input :genero
 
 	end	
-   f.actions
-end
+   		f.actions
+	end
+
 show do
 		attributes_table do
 		   row :name
