@@ -13,6 +13,11 @@ class PostsController < ApplicationController
     
   end
 
+  def create_default
+    
+    
+  end
+
   # GET /posts/1
   # GET /posts/1.json
   def show
