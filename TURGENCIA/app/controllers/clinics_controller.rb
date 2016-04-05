@@ -21,6 +21,10 @@ class ClinicsController < ApplicationController
   def edit
   end
 
+  def clinica
+  end
+
+
   def search
     @clinics = Clinic.where("name LIKE ?", "%#{params[:q]}%")
   end
