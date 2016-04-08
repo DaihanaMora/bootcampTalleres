@@ -15,5 +15,17 @@
   <%= @clinic.eps_asociada %>
 </p>
 
+<p>
+  <strong>Lista de espera:</strong>
+  <%= @clinic.list_count %>
+</p>
+
+
+<%= link_to "Asistir en esta clinica", add_to_wait_list_path(@clinic), class: "btn btn-primary", remote: true , method: :post %>
+
+
+<p id= "respuesta"></p>
+
+
 <%= link_to 'Edit', edit_clinic_path(@clinic) %> |
 <%= link_to 'Back', clinics_path %>

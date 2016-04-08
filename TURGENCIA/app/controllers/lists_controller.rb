@@ -3,6 +3,15 @@ class ListsController < ApplicationController
 
   # GET /lists
   # GET /lists.json
+
+  def add_to_wait_list
+    clinic = Clinic.find(params[:id])
+    list = List.new
+    list.clinic = clinic
+    list.user = current_user
+    list.save
+  end
+
   def index
     @lists = List.all
   end
@@ -15,6 +24,7 @@ class ListsController < ApplicationController
   # GET /lists/new
   def new
     @list = List.new
+    redirect_to #_path
   end
 
   # GET /lists/1/edit
@@ -69,6 +79,6 @@ class ListsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def list_params
-      params.require(:list).permit(:clinic, :usuario)
+      params.require(:list).permit(:clinic, :usuario )
     end
 end

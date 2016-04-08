@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
   
-  resources :lists
+  resources :lists do
+    member do 
+      post 'add_to_wait_list', as: 'add_to_wait'
+    end
+  end
   
   devise_for :users, controllers: { registrations: "registrations"}
   
