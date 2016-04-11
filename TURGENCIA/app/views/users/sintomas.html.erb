@@ -1,0 +1,14 @@
+
+
+<h1>Señor <%= current_user.name_all %>, ¿Cuales son sus sintomas? </h1>
+
+
+<%= form_for @user, url: {action: "sintomas"}, html: {class: "nifty_form"} do |f| %>
+
+  <%= f.text_area  :sintomas, size: "60x12" %>
+
+
+<div class="actions">
+    <%= f.submit "Enviar" %>
+  </div>
+<% end %>

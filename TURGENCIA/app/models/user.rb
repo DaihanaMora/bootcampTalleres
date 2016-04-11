@@ -1,6 +1,7 @@
 class User < ActiveRecord::Base
 	has_many :lists
 	has_many :clinics, through: :lists
+
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
 
@@ -10,4 +11,15 @@ class User < ActiveRecord::Base
          :recoverable, :rememberable, :trackable, :validatable ,:confirmable
 
 
+         def name_all
+         	name + ' ' + lastname
+         end
+
+
 end
+
+
+
+
+
+

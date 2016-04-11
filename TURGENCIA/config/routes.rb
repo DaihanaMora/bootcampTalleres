@@ -1,5 +1,5 @@
 Rails.application.routes.draw do
-  
+
   resources :lists do
     member do 
       post 'add_to_wait_list', as: 'add_to_wait'
@@ -11,6 +11,10 @@ Rails.application.routes.draw do
   # esta es mi index
   devise_scope :user do
     root to: "devise/registrations#new"
+
+    get 'user/sintomas' , to: 'users#sintomas' , as: :sintomas
+
+
   end
 
   resources :clinics do 
