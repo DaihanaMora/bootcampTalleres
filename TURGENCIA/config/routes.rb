@@ -13,7 +13,7 @@ Rails.application.routes.draw do
     root to: "devise/registrations#new"
 
     get 'user/sintomas' , to: 'users#sintomas' , as: :sintomas
-
+    post 'save_sintoma', to: 'users#save_sintoma'
 
   end
 

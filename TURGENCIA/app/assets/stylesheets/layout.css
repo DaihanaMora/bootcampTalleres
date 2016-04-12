@@ -1,0 +1,13 @@
+/* vista del layouts*/
+
+.login{
+	float: right;
+    margin-right: 40px;
+
+}
+
+.search{
+    right: 4%;
+    bottom: 60%;
+    position: absolute;
+}

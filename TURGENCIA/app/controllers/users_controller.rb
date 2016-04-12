@@ -4,6 +4,11 @@ class UsersController < ApplicationController
 		@user = User.new
 	end
 
+  def save_sintoma
+    current_user.update(sintomas: params[:sintomas])
+    redirect_to clinics_path
+  end
+
   def edit
   end
 	 def update
