@@ -6,8 +6,6 @@ Rails.application.routes.draw do
     end
   end
   
-  devise_for :users, controllers: { registrations: "registrations"}
-  
   # esta es mi index
   devise_scope :user do
     root to: "devise/registrations#new"
@@ -22,6 +20,8 @@ Rails.application.routes.draw do
       get 'search'
     end
   end
+
+  devise_for :users, controllers: {sessions: 'sessions', registrations: 'registrations'}
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 

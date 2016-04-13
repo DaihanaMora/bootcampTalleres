@@ -18,7 +18,7 @@
               </li>
             <% else %>   
               <li class="login">
-                <%= link_to('Login', new_user_session_path)  %>  
+                <a href="#" class="btn btn-success navbar-btn" data-toggle="modal" data-target="#myModal">Login</a> 
               </li>
             <% end %> 
                 <br><br>
@@ -32,6 +32,6 @@
       </div>
 </div>
 <%= yield %>
-
+<%= render partial: 'partials/login' %>
 </body>
 </html>
