@@ -5,6 +5,11 @@ class ClinicsController < ApplicationController
   # GET /clinics.json
   def index
     @clinics = Clinic.all
+
+    if request.xhr?
+      render partial: 'clinics', locals: { clinics: @clinics}
+    end
+    
   end
 
   # GET /clinics/1
