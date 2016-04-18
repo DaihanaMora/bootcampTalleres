@@ -30,8 +30,8 @@
               </div>
               <br>
               <div class="field5">
-                <%= f.label :EPS %><br />
-                <%= f.text_field :eps %>
+                <%= f.label :entity %><br />
+                <%= f.collection_select :entity_id, Entity.all, :id, :name %>
               </div>
               <br>
               <div class="field6">

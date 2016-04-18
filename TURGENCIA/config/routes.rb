@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
 
+  devise_for :admin_users, ActiveAdmin::Devise.config
+  ActiveAdmin.routes(self)
   resources :lists do
     member do 
       post 'add_to_wait_list', as: 'add_to_wait'
@@ -18,6 +20,7 @@ Rails.application.routes.draw do
   resources :clinics do 
     collection do
       get 'search'
+      get 'all'
     end
   end
 

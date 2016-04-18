@@ -222,7 +222,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  activeadmin
+  activeadmin (~> 1.0.0.pre2)
   byebug
   cancancan (~> 1.10)
   carrierwave
