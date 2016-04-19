@@ -3,7 +3,7 @@ class User < ActiveRecord::Base
 	has_many :clinics, through: :lists
 
   belongs_to :entity
-
+  enum roles: [:asdsa,:asdas,:asdas]
   # Include default devise modules. Others available are:
   # :confirmable, :lockable, :timeoutable and :omniauthable
 
