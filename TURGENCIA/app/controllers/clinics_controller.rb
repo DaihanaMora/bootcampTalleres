@@ -28,7 +28,17 @@ class ClinicsController < ApplicationController
   end
 
   # GET /clinics/1/edit
-  
+  def update
+    respond_to do |format|
+      if @clinic.update(clinic_params)
+        format.html { redirect_to @clinic, notice: 'List was successfully updated.' }
+        format.json { render :show, status: :ok, location: @Clinicclinic}
+      else
+        format.html { render :edit }
+        format.json { render json: @Clinicclinic.errors, status: :unprocessable_entity }
+      end
+    end
+  end
 
   def clinica
   end

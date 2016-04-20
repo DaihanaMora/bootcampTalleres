@@ -10,6 +10,21 @@ class Ability
     #   else
     #     can :read, :all
     #   end
+    case user.role        
+          when 'admin'
+            can :read, ActiveAdmin::Page, :name => "Dashboard"
+            can :manage, Route, :company_id => user.company_id
+            can :manage, BusRouteSchedule, :company_id => user.company_id
+            can :manage, Bus, :company_id => user.company_id
+            can :manage, Conductor, :company_id => user.company_id
+            can :manage, Station, :company_id => user.company_id
+            can :manage, AdminUser, :company_id => user.company_id
+          when 'super-admin'
+            can :manage, :all
+    end
+
+  end
+
     #
     # The first argument to `can` is the action you are giving the user
     # permission to do.
